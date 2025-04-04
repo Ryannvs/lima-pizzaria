@@ -1,3 +1,7 @@
+:root{
+    --primary-color: #f07807;
+    --secundary-color: #f7e5d8;
+}
 *{
     padding: 0;
     margin: 0;
@@ -15,24 +19,56 @@ ul,ol,li{
 
 body{
   padding: 0 80px;
+  font-family: "Poppins", sans-serif;
+
 }
 
 header{
     position: absolute;
-    background-color: black;
     height: 60px;
     width: calc(100% - 160px);
     top: 60px;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+    font-size: 1rem;
+}
+
+header li{
+    transition: .5s;
+    padding: 4px 8px;
 
 }
 
+header li:hover{
+    box-shadow: 0 6px 8px #333;
+    background-color:  var(--secundary-color);
+}
+
+.login{
+    height: 48px;
+    width: 120px;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--secundary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 main{
-    background-color: red;
+    background-color: #fef2e7;
     height: 500px;
 }
 
 footer{
-    background-color: yellow;
+    background-color: #f07807;
     height: 526px;
 }
